@@ -1,0 +1,141 @@
+%--------------------------------------------------------------------------
+% This LaTeX document was developed for my GmE300 master's thesis submitted
+% as a requirement under the Master of Geomatics Engineering, Major in 
+% Remote Sensing at the Department of Geodetic Engineering, University of 
+% the Philippines Diliman.
+%
+% The LaTeX template follows the thesis manuscript template prescribed by
+% the National Graduate School of Engineering, which may also be used as 
+% template by graduate students for creating thesis manuscripts from other 
+% departments.
+% 
+% This template was based on the original template written by M. Imran
+% (18 Jun 2001), and subsequently updated by Ian Craig (20 Oct 2014) based 
+% on the Mechanical Engineering Thesis Guidelines, the University of New 
+% South Wales, Australia. 
+%
+% Revision by:		Jose Don T. De Alban
+% Date revised:		30 Jun 2017	
+% License: 
+% 
+%--------------------------------------------------------------------------
+%
+% This main 'UPD-CoE-Thesis-Template.tex' file controls the whole document. 
+% It has three functions:
+%   1. Include and configure any packages used in the document
+%   2. Define page numbering, structure, and bibliography
+%   3. Import/Include all other files
+%
+%--------------------------------------------------------------------------
+
+\documentclass[thesis]{UPD-CoE-Thesis-Template}
+
+%--------------------------------------------------------------------------
+% Load Packages
+%--------------------------------------------------------------------------
+\usepackage{algorithm}
+\usepackage{algpseudocode} % Display algorithms nicely. http://goo.gl/6Z93aV
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs} % From http://goo.gl/2ezu9p to make tables look nicer.
+\usepackage{caption}
+%\usepackage{cite}
+\usepackage{color}
+\usepackage{ctable}
+\usepackage[draft]{listofsymbols} % Add list of symbols.
+\usepackage{epic}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage{fancyhdr}
+\usepackage{fmtcount}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{indentfirst} % To indent first line of paragraph
+\usepackage{latexsym}
+\usepackage{listings} % To format code
+\usepackage{longtable}
+\usepackage{ltablex}
+\usepackage{mathtext}
+\usepackage{mdwlist} % To reduce list vertical spacing. http://goo.gl/nyLux
+\usepackage{microtype} % To improve line filling
+\usepackage{multirow}
+%\usepackage{natbib}
+\usepackage{pdflscape} % Rotate display of landscape pages in PDFs http://goo.gl/wbg4fy
+\usepackage{printlen} % Print variables. http://goo.gl/3ZdAPV
+\usepackage{setspace}
+%\usepackage[space]{grffile} % Allow spaces in file path names
+\usepackage{subcaption} % Replaces subfig and subfigure.
+\usepackage{tabularx}
+\usepackage{theorem}
+\usepackage[toc,page]{appendix}
+\usepackage{usnomencl} % For making a glossary of nomenclature.
+\usepackage{url}
+
+%\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=cyan}
+\urlstyle{rm}
+
+
+%\uselengthunit{in} % See above
+%\printlength{\textwidth} % See above
+%\the\textwidth   % \textwidth = 426.79134 pt = 149.99823 mm = 5.90666 in. An alternative method of printing variables.
+% @300dpi --> 1771 px.
+% For adding Latex Section symbols to the actual headings:
+%\usepackage{titlesec}. 
+%\titleformat{\section}{\normalfont\Large\bfseries}{\S\thesection}{1em}{}
+% For cyrillic font (naiive i)
+%\usepackage[OT2,OT1]{fontenc} 
+
+
+%--------------------------------------------------------------------------
+% Setup
+%--------------------------------------------------------------------------
+
+% Bibliography File Path
+\bibliography{../Template/references/bibliography}
+
+% Inputs
+\input{include/format} % format.tex
+\include{include/commands} % commands.tex
+
+% Images Directories
+\graphicspath{{./images/}
+			  {./images/introduction/}
+			  {./images/literature-review/}
+			  {./images/methodology/}
+			  {./images/results/}
+			  {./images/appendix/segmentation/}
+			  {./images/appendix/decision-trees/case1/}
+			  {./images/appendix/decision-trees/case2/}
+			  {./images/appendix/decision-trees/case3/}
+			  {./images/appendix/decision-trees/case4/}} 
+
+\begin{document}
+	
+	\input{include/symbolslist} % symbolslist.tex
+
+	% Header Pages
+	\input{preliminaries/coverpage}
+
+	% Setup Contents
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+	\setcounter{chapter}{0}
+	\setcounter{equation}{0}
+
+	% Chapters
+	\include{main/1_introduction}
+	\include{main/2_literaturereview}
+	\include{main/3_methodology}
+	\include{main/4_results}
+	\include{main/5_discussion}
+	\include{main/6_conclusion}
+
+	% Bibliography
+	\printbibliography
+
+	% Appendix
+	\include{supplementary/appendix}
+
+\end{document}

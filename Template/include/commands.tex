@@ -1,0 +1,27 @@
+%--------------------------------------------------------------------------
+% Document Variables
+%--------------------------------------------------------------------------
+
+\newcommand{\thesistitle}[0]{\textrm{Insert Title of the Thesis}}
+\newcommand{\authorname}[0]{\textrm{Insert Author Name}}
+\newcommand{\thesismonthyear}[0]{\textrm{January 2017}}
+\newcommand{\advisername}[0]{\textrm{Insert Adviser Name}}
+
+
+%--------------------------------------------------------------------------
+% Figures
+%--------------------------------------------------------------------------
+
+\newcommand{\executeiffilenewer}[3]{%
+\ifnum\pdfstrcmp{\pdffilemoddate{#1}}%
+{\pdffilemoddate{#2}}>0%
+{\immediate\write18{#3}}\fi%
+}
+\newcommand{\includesvg}[1]{%
+\executeiffilenewer{#1.svg}{#1.pdf}%
+{inkscape -z -D --file=#1.svg %
+--export-pdf=#1.pdf --export-dpi=600 --export-latex}%
+\input{#1.pdf_tex}%
+}
+
+\newcommand{\vectornorm}[1]{\left|\left|#1\right|\right|}

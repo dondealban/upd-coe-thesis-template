@@ -1,0 +1,153 @@
+%--------------------------------------------------------------------------
+% Cover Page
+%--------------------------------------------------------------------------
+
+% The cover page is based on the National Graduate School of Engineering, University of the Philippines Diliman thesis guidelines
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+%\setcounter{secnumdepth}{3}
+
+\newpage
+\thispagestyle{empty}
+\begin{center}
+
+	% Insert university logo
+	\begin{figure}
+	\centering
+	\includegraphics{cov_upd-logo.png}
+	\label{fig: cover-uplogo}
+	\end{figure}
+
+  	% Insert text
+  	{UNIVERSITY OF THE PHILIPPINES\\[0.5cm]
+	 Master of Science in Geomatics Engineering}
+  	 \vspace*{1cm}
+  
+  	{\textbf \authorname}
+  	 \vspace*{0.2cm}
+  
+  	\begin{singlespace}
+  		{\thesistitle}
+  	\end{singlespace}  
+  
+  	\vspace*{0.5cm}
+
+	{Thesis Adviser:}\\[0.5cm]
+	 \begin{singlespace}
+  	 	\textbf \advisername\\
+  	 	{Department of Geodetic Engineering\\
+  	 	University of the Philippines Diliman}
+  	 \end{singlespace}
+  	 \vspace*{1cm}
+
+  	{Date of Submission:\\ 
+  	 \thesismonthyear}
+  	 \vspace*{1cm}
+  	
+  	{Thesis Classification:\\ 
+  	 \textbf{F}\\
+  	 This thesis is available to the public.}
+  	 \vspace*{1cm}  
+
+\end{center}
+
+
+%--------------------------------------------------------------------------
+% Approval Page
+%--------------------------------------------------------------------------
+\newpage
+\thispagestyle{empty}
+
+\begin{singlespace}
+This thesis entitled, \textbf{\MakeUppercase \thesistitle}, prepared and submitted by \textbf{\MakeUppercase \authorname}, in partial fulfillment of the requirements for the degree of \textbf{INSERT ENGINEERING DEGREE}, major in \textbf{INSERT MAJOR IF ANY} is hereby accepted.
+\end{singlespace}
+
+\vspace*{1cm}
+
+\begin{singlespace}
+	{\noindent\hspace*{7cm}\textbf{\MakeUppercase \advisername}}\\
+	{\hspace*{9.2cm}Thesis Adviser}
+\end{singlespace}
+
+\vspace*{6cm}
+
+\begin{singlespace}
+Accepted as partial fulfillment of the requirements for the degree of \textbf{INSERT ENGINEERING DEGREE}, major in \textbf{INSERT MAJOR IF ANY}.
+\end{singlespace}
+
+\vspace*{1cm}
+
+\begin{singlespace}
+	{\noindent\hspace*{7.4cm}\textbf{\MakeUppercase {INSERT COLLEGE DEAN NAME}}}\\
+	{\hspace*{10.1cm}Dean}
+\end{singlespace}
+
+
+%--------------------------------------------------------------------------
+% Acknowledgement
+%--------------------------------------------------------------------------
+\newpage
+\thispagestyle{empty}
+\chapter*{Acknowledgement}
+
+\input{preliminaries/0_acknowledgement}
+
+%--------------------------------------------------------------------------
+% Abstract
+%--------------------------------------------------------------------------
+\newpage
+\thispagestyle{empty}
+\chapter*{Abstract}
+
+\input{preliminaries/0_abstract}
+
+
+%--------------------------------------------------------------------------
+% Table of Contents
+%--------------------------------------------------------------------------
+
+% Note: Comment out as necessary
+
+%\setcounter{secnumdepth}{3}
+\tableofcontents 
+\clearpage
+
+
+%--------------------------------------------------------------------------
+% Acronyms
+%--------------------------------------------------------------------------
+
+% Note: Nomenclature superceded by \listofsymbols package.
+\newpage
+\thispagestyle{empty}
+\chapter*{Acronyms}
+
+\input{preliminaries/0_acronyms}
+
+
+%--------------------------------------------------------------------------
+% Lists
+%--------------------------------------------------------------------------
+
+% Note: Comment out as necessary
+
+%\setcounter{secnumdepth}{3}
+\listoftables
+\listoffigures
+%\listofsymbols
+%\nomencl
+\clearpage
+
+
+%--------------------------------------------------------------------------
+% Measurement Units
+%--------------------------------------------------------------------------
+
+% Note: Nomenclature superceded by \listofsymbols package.
+\newpage
+\thispagestyle{empty}
+\chapter*{Measurement Units}
+
+\input{preliminaries/0_measurementunits}
+
