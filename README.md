@@ -1,5 +1,5 @@
 # UPD CoE Thesis Template
-This repository contains the `LaTeX` version of the thesis manuscript template for graduate students of the College of Engineering, University of the Philippines, Diliman, Quezon City, Philippines. This `LaTeX` version was based on the [original manuscript template](http://coe.upd.edu.ph/graduating-students/) provided by the National Graduate School of Engineering.
+This repository contains the `LaTeX` version of the thesis manuscript template for graduate students of the College of Engineering, University of the Philippines, Diliman, Quezon City, Philippines. This `LaTeX` version was based on the [manuscript template](http://coe.upd.edu.ph/graduating-students/) provided by the National Graduate School of Engineering.
 
 This template has been compiled using the current distribution of [MacTeX 2017](http://www.tug.org/mactex/) and  [TexPad](https://www.texpad.com) `LaTeX` editor. It has also been tested using [TexStudio](http://www.texstudio.org).
 
